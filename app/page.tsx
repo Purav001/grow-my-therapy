@@ -12,8 +12,9 @@ export default function Home() {
     <div className="min-h-screen bg-[#F5EFE6]">
       <Header version="redesign" />
       <Hero version="redesign" />
-      <About version="redesign" />
-      <Approach version="redesign" />
+      <About />
+      <Approach /> 
+      {/* version="redesign" */}
       <Office version="redesign" />
       <FAQ version="redesign" />
       <Contact version="redesign" />
