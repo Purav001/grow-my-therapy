@@ -15,9 +15,9 @@ export default function Home() {
       <About />
       <Approach /> 
       {/* version="redesign" */}
-      <Office version="redesign" />
+      <Office />
       <FAQ version="redesign" />
-      <Contact version="redesign" />
+      <Contact />
       <Footer version="redesign" />
     </div>
   );

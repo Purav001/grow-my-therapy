@@ -33,7 +33,7 @@ export default function About() {
     <section id="about" className="relative overflow-hidden bg-white py-24 lg:py-32">
       {/* Decorative background elements */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-secondary/5 blur-3xl animate-pulse-soft" />
+        {/* <div className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-secondary/5 blur-3xl animate-pulse-soft" /> */}
         <div className="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-accent/40 blur-3xl animate-pulse-soft" style={{ animationDelay: '2s' }} />
         <div className="absolute right-1/4 top-1/2 h-64 w-64 blob-shape bg-muted/50 blur-2xl animate-float-slow" />
       </div>

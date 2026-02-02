@@ -1,128 +1,147 @@
-import { MapPin, Video, Clock } from 'lucide-react';
+'use client';
 
-interface OfficeProps {
-  version: 'clone' | 'redesign';
-}
+import { MapPin, Video, Leaf } from 'lucide-react';
 
-export default function Office({ version }: OfficeProps) {
-  if (version === 'clone') {
-    return (
-      <section className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-4xl text-[#2F4156] mb-8">Office Location</h2>
+export default function Office() {
+  return (
+    <section className="bg-white py-40">
+      <div className="max-w-7xl mx-auto px-8">
 
-          <div className="mb-8">
-            <p className="text-lg text-[#567C8D] mb-4">
-              <strong className="text-[#2F4156]">Address:</strong> 123th Street 45 W, Santa Monica, CA 90401
-            </p>
-            <p className="text-lg text-[#567C8D]">
-              I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for
-              clients located in California. My office is a quiet, private space designed to feel calm and
-              grounding, with natural light and a comfortable, uncluttered environment.
+        {/* ================= HEADER + IMAGES ================= */}
+        <div className="grid lg:grid-cols-2 gap-20 items-start mb-32">
+
+          {/* ---------- TEXT (LEFT) ---------- */}
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-12 bg-[#567C8D]" />
+              <span className="text-sm tracking-widest text-[#567C8D] uppercase">
+                The Space
+              </span>
+            </div>
+
+            <h2 className="text-[3.2rem] leading-tight text-[#2F4156] font-serif mb-6">
+              A sanctuary for{' '}
+              <span className="italic text-[#567C8D]">
+                healing & growth
+              </span>
+            </h2>
+
+            <p className="text-lg text-[#567C8D] leading-relaxed">
+              Step into an environment thoughtfully designed to help you feel
+              safe, grounded, and ready to explore what matters most.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-lg overflow-hidden bg-[#F5EFE6] min-h-80 flex items-center justify-center">
+          {/* ---------- IMAGES (RIGHT) ---------- */}
+          <div className="grid grid-cols-2 gap-6">
+            <div className="aspect-[4/3] rounded-[1.75rem] overflow-hidden group">
               <img
                 src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Therapy office interior"
-                className="w-full h-auto max-h-80 object-contain"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
-            <div className="rounded-lg overflow-hidden bg-[#F5EFE6] min-h-80 flex items-center justify-center">
+
+            <div className="aspect-[4/3] rounded-[1.75rem] overflow-hidden group translate-y-6">
               <img
                 src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Therapy office waiting area"
-                className="w-full h-auto max-h-80 object-contain"
+                alt="Therapy waiting area"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
 
-  return (
-    <section className="bg-white py-32">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-5xl font-bold text-[#2F4156] mb-6">
-            Visit My Practice
-          </h2>
-          <p className="text-xl text-[#567C8D] leading-relaxed">
-            A calm, private space designed for healing and growth
+        {/* ================= QUOTE ================= */}
+        <div className="max-w-4xl mx-auto text-center mb-32">
+        <Leaf className="w-8 h-8 text-office-sage mx-auto mb-6" />
+          <p className="font-serif text-[1.8rem] italic text-[#567C8D] leading-relaxed">
+            “The environment we create together—physical or virtual—
+            is the foundation upon which transformation becomes possible.”
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          <div className="bg-[#F5EFE6] p-8 rounded-2xl space-y-4 text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-[#2F4156] rounded-full flex items-center justify-center mx-auto">
-              <MapPin className="w-8 h-8 text-white" />
+        {/* ================= INFO CARDS ================= */}
+        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto mb-24">
+
+          {/* In-Person Card */}
+          <div
+            className="bg-[#F5EFE6]/60 rounded-[2rem] p-10
+            transition-all duration-300
+            hover:-translate-y-1
+            hover:shadow-[0_20px_40px_-20px_rgba(47,65,86,0.35)]
+            hover:bg-[#F5EFE6]"
+          >
+            <div className="w-12 h-12 rounded-full bg-white ring-1 ring-[#2F4156]/20 flex items-center justify-center mb-6">
+              <MapPin className="w-5 h-5 text-[#2F4156]" />
             </div>
-            <h3 className="text-xl font-semibold text-[#2F4156]">In-Person Sessions</h3>
-            <p className="text-[#567C8D] leading-relaxed">
-              123th Street 45 W<br />
+
+            <h3 className="text-xl font-serif text-[#2F4156] mb-4">
+              In-Person Sessions
+            </h3>
+
+            <p className="text-[#567C8D] leading-relaxed mb-6">
+              My Santa Monica office offers a warm, private retreat designed
+              to help you feel at ease from the moment you arrive.
+            </p>
+
+            <p className="text-sm text-[#567C8D]">
+              <strong className="text-[#2F4156]">
+                123 Ocean Avenue, Suite 400
+              </strong>
+              <br />
               Santa Monica, CA 90401
             </p>
           </div>
 
-          <div className="bg-[#F5EFE6] p-8 rounded-2xl space-y-4 text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-[#567C8D] rounded-full flex items-center justify-center mx-auto">
-              <Video className="w-8 h-8 text-white" />
+          {/* Telehealth Card */}
+          <div
+            className="bg-[#F5EFE6]/60 rounded-[2rem] p-10
+            transition-all duration-300
+            hover:-translate-y-1
+            hover:shadow-[0_20px_40px_-20px_rgba(47,65,86,0.35)]
+            hover:bg-[#F5EFE6]"
+          >
+            <div className="w-12 h-12 rounded-full bg-white ring-1 ring-[#567C8D]/30 flex items-center justify-center mb-6">
+              <Video className="w-5 h-5 text-[#567C8D]" />
             </div>
-            <h3 className="text-xl font-semibold text-[#2F4156]">Telehealth Available</h3>
-            <p className="text-[#567C8D] leading-relaxed">
-              Secure video sessions for clients throughout California
-            </p>
-          </div>
 
-          <div className="bg-[#F5EFE6] p-8 rounded-2xl space-y-4 text-center hover:shadow-lg transition-shadow">
-            <div className="w-16 h-16 bg-[#2F4156] rounded-full flex items-center justify-center mx-auto">
-              <Clock className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-xl font-semibold text-[#2F4156]">Flexible Scheduling</h3>
-            <p className="text-[#567C8D] leading-relaxed">
-              Evening and weekend appointments available
+            <h3 className="text-xl font-serif text-[#2F4156] mb-4">
+              Telehealth Sessions
+            </h3>
+
+            <p className="text-[#567C8D] leading-relaxed mb-6">
+              Secure, HIPAA-compliant video sessions allow you to receive
+              care wherever you feel most comfortable.
+            </p>
+
+            <p className="text-sm text-[#567C8D]">
+              <strong className="text-[#2F4156]">
+                Available Throughout California
+              </strong>
+              <br />
+              Flexible scheduling options
             </p>
           </div>
         </div>
 
-        <div className="bg-[#F5EFE6] p-10 rounded-3xl">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-[#2F4156]">
-                A Space Designed for Comfort
-              </h3>
-              <p className="text-lg text-[#567C8D] leading-relaxed">
-                My Santa Monica office is a quiet, private sanctuary designed to feel calm and grounding.
-                With abundant natural light and a comfortable, uncluttered environment, clients often share
-                that the space itself helps them feel more at ease the moment they arrive.
-              </p>
-              <p className="text-lg text-[#567C8D] leading-relaxed">
-                Whether you choose in-person sessions or secure telehealth appointments, you'll find a
-                welcoming, confidential space focused entirely on your healing and growth.
-              </p>
-            </div>
+        {/* ================= CTA ================= */}
+        <div className="text-center">
+          <p className="text-[#567C8D] mb-8 max-w-xl mx-auto">
+            Whether we connect in person or online, you’ll find a consistent
+            space of warmth, confidentiality, and genuine understanding.
+          </p>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-2xl overflow-hidden shadow-lg bg-[#F5EFE6] h-80 flex items-center justify-center">
-                <img
-                  src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Comfortable therapy office"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg h-80 flex items-center justify-center">
-                <img
-                  src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Peaceful waiting area"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            </div>
-          </div>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full
+            bg-[#2F4156] text-white font-medium
+            hover:bg-[#1F2F3F] transition-colors"
+          >
+            Schedule a Consultation
+          </a>
         </div>
+
       </div>
     </section>
   );
