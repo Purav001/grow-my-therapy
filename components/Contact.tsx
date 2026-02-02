@@ -54,6 +54,13 @@ export default function Contact() {
                 </a>
               </div>
             </div>
+            {/* Gentle reassurance */}
+            <p className="pt-6 text-sm text-[#567C8D] leading-relaxed max-w-md text-center">
+              There’s no pressure to know what to say. Many people begin with a few simple sentences.
+              <span className="italic">
+                This is a space where questions, uncertainty, and honesty are welcome.
+              </span>
+            </p>
           </div>
 
           {/* ================= RIGHT — FORM ================= */}
@@ -127,16 +134,6 @@ export default function Contact() {
               </p>
             </form>
           </div>
-
-        </div>
-
-        {/* ================= CENTERED WHISPER ================= */}
-        <div className="mt-28 text-center max-w-3xl mx-auto text-[#567C8D] text-sm leading-relaxed">
-          <p>
-            There’s no pressure to know what to say. Many people begin with a few simple sentences.
-            <br />
-            This is a space where questions, uncertainty, and honesty are welcome.
-          </p>
         </div>
 
       </div>

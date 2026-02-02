@@ -49,8 +49,8 @@ export default function Hero({ version }: HeroProps) {
           >
             <div className="w-80 sm:w-96 lg:w-[24rem] xl:w-[26rem] aspect-[3/4] overflow-hidden image-organic">
               <img
-                src="https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Woman holding lilac flowers"
+                src="/images/Dr. Maya Reynolds.png"
+                alt="Peaceful therapy environment"
                 className="w-full h-full object-cover"
               />
             </div>

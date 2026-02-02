@@ -36,7 +36,7 @@ export default function Office() {
           <div className="grid grid-cols-2 gap-6">
             <div className="aspect-[4/3] rounded-[1.75rem] overflow-hidden group">
               <img
-                src="https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/images/office1.jpeg"
                 alt="Therapy office interior"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
@@ -44,7 +44,7 @@ export default function Office() {
 
             <div className="aspect-[4/3] rounded-[1.75rem] overflow-hidden group translate-y-6">
               <img
-                src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/images/office2.jpeg"
                 alt="Therapy waiting area"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
