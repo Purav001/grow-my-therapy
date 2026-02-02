@@ -4,7 +4,7 @@ import { MapPin, Video, Leaf } from 'lucide-react';
 
 export default function Office() {
   return (
-    <section className="bg-white py-40">
+    <section id="thespace" className="bg-white py-40">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* ================= HEADER + IMAGES ================= */}
