@@ -3,7 +3,7 @@
 **Grow-My-Therapy** is a responsive therapist landing page built using **Next.js** and **Tailwind CSS**.  
 It presents a clean, calming, and user-friendly interface for showcasing mental health services.
 
-<!-- 🔗 **Live Website:** https://growtherapy.netlify.app/ -->
+🔗 **Live Website:** https://grow-my-therapy-five.vercel.app/
 
 ---
 
@@ -35,7 +35,7 @@ This project is suitable for:
 - **React.js** – UI components
 - **Tailwind CSS** – Styling
 - **TypeScript** – Type safety
-- **Netlify** – Deployment
+- **Vercel** – Deployment
 
 ---
 
@@ -47,8 +47,6 @@ This project is suitable for:
 ├── hooks/              # Custom hooks
 ├── lib/                # Utility functions
 ├── public/             # Static assets
-├── styles/             # Styling files
 ├── next.config.js      # Next.js configuration
 ├── tailwind.config.ts  # Tailwind configuration
-├── tsconfig.json       # TypeScript configuration
-└── netlify.toml        # Netlify deployment config
+└── tsconfig.json       # TypeScript configuration
